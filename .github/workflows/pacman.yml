@@ -1,0 +1,29 @@
+name: Generate Pacman/Breakout Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Se actualiza cada 12 horas
+  workflow_dispatch: # Permite ejecutarlo manualmente con un botón
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate SVG
+        uses: Platane/snk@v3 # O la acción específica que genera el juego Breakout/Pacman
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/breakout-contribution-graph.svg?palette=github-light&game=breakout
+            dist/breakout-contribution-graph-dark.svg?palette=github-dark&game=breakout
+
+      - name: Push to pacman-output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: pacman-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
