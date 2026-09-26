@@ -43,14 +43,19 @@
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-light.svg"
-  />
-  <img alt="Breakout Game" src="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-light.svg" />
-</picture>
+</p>
+<p align = "center">
+  	<picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-light.svg"
+    />
+    <img alt="Breakout Game" src="https://raw.githubusercontent.com/ItsRigozzi/ItsRigozzi/github-breakout/images/breakout-light.svg" />
+  </picture>
+</p>
+
+<div align="center">
